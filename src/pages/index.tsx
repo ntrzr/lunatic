@@ -1,21 +1,28 @@
 import { FAQ } from "~/components/faq";
+import Head from "next/head";
 import ImageCarousel from "~/components/image-carousel";
 import Navigation from "~/components/navigation";
 import { Button } from "~/components/ui/button";
 import logo from "../images/lunatic.png"
+import favicon from "../images/favicon.ico"
 import { Label } from "~/components/ui/label";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "~/components/ui/tabs";
 
 export default function Home() {
   return (
-    <div className="container mx-auto px-4 py-8 flex flex-col justify-center">
-      <Navigation />
-      <h1 className="mb-4 text-5xl font-sans mt-5"> LUNATIC - ROBLOX GAME</h1>
-      
-      <div className="mt-16 justify-center flex">
-        <ImageCarousel />
-      </div>
-      <div className="mt-7">
+    <>
+      <Head>
+        <meta charSet="utf-8"/>
+        <link rel="icon" href={favicon.src} type="image/x-icon" />
+        <title>Lunatic</title>
+      </Head>
+      <div className="container mx-auto px-4 py-8 flex flex-col justify-center">
+        <Navigation />
+        <div className="mt-16 justify-center flex">
+          <ImageCarousel />
+        </div>
+        <h1 className="mb-4 text-5xl font-sans mt-5"> LUNATIC - ROBLOX GAME</h1>
+        <div className="mt-7">
         <h2 className="text-4xl">About Lunatic</h2>
         <p className="mt-5 text-xl text-left">Your mission is to explore the dark corridors of an old psychiatric hospital and collect keys that will help you unlock the way out. Be careful! There is a terrifying monster lurking in the dark corners of the house, waiting for a careless victim.</p>
         <h3 className="text-3xl mt-3">Spooky atmosphere</h3>
@@ -28,6 +35,8 @@ export default function Home() {
         <p className="mt-5 text-xl text-left">Prepare for a short and intense gaming experience in our game, where a terrifying monster awaits around every corner. Players must quickly gather keys in the spine-chilling environment to unlock their escape route while evading the relentless pursuit of the monster. With adrenaline-pumping gameplay and a race against time, every moment is filled with heart-stopping suspense and thrills.</p>
       </div>
       <FAQ />
-    </div>
+        
+      </div>
+    </>
   );
 }
