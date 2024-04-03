@@ -22,16 +22,9 @@ export default function Navigation() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/game" legacyBehavior passHref>
+          <Link href="https://www.roblox.com/games/15050697759/Lunatic" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Play
-            </NavigationMenuLink>
-          </Link>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href="/authors" legacyBehavior passHref>
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Authors
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
