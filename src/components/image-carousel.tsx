@@ -1,8 +1,5 @@
 import * as React from "react";
-import logo from '../images/lunatic.png';
-import screen1 from '../images/1.png';
-import screen2 from '../images/2.png';
-import screen3 from '../images/3.png';
+
 import { Card, CardContent } from "~/components/ui/card";
 import {
   Carousel,
@@ -14,17 +11,19 @@ import {
 
 export default function ImageCarousel() {
   return (
-    <Carousel className="w-full max-w-4xl content-center justify-center place-items-center">
+    <Carousel className="w-full max-w-xs">
       <CarouselContent>
-          <CarouselItem>
-            <img src={screen1.src} alt="logo" />
+        {Array.from({ length: 5 }).map((_, index) => (
+          <CarouselItem key={index}>
+            <div className="p-1">
+              <Card>
+                <CardContent className="flex aspect-square items-center justify-center p-6">
+                  <span className="text-4xl font-semibold">{index + 1}</span>
+                </CardContent>
+              </Card>
+            </div>
           </CarouselItem>
-          <CarouselItem>
-            <img src={screen2.src} alt="logo" />
-          </CarouselItem>
-          <CarouselItem>
-            <img src={screen3.src} alt="logo" />
-          </CarouselItem>
+        ))}
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
