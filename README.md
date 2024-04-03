@@ -1,4 +1,8 @@
 # Lunatic Landing Page
+## Authors
+- Adam Zarówny
+- Kristián Stefurak
+- Nikolas Erlebach
 
 ## How to Install and Run:
 
