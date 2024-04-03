@@ -15,14 +15,14 @@ export default function Navigation() {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link target="_blank" href="https://github.com/KordyDX/Lunatic" legacyBehavior passHref>
+          <Link target="_blank" rel="noopener noreferrer" href="https://github.com/KordyDX/Lunatic" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Github
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link target="_blank" href="https://www.roblox.com/games/15050697759/Lunatic" legacyBehavior passHref>
+          <Link target="_blank" rel="noopener noreferrer" href="https://www.roblox.com/games/15050697759/Lunatic" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Play
             </NavigationMenuLink>
