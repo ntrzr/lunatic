@@ -7,7 +7,7 @@ import {
 
 export function FAQ() {
   return (
-    <Accordion type="single" collapsible className="w-full">
+    <Accordion type="single" collapsible className="w-full mt-7">
       <AccordionItem value="item-1">
         <AccordionTrigger>What is Lunatic?</AccordionTrigger>
         <AccordionContent>
