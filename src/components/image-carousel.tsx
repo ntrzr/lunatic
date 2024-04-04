@@ -4,6 +4,7 @@ import { Card, CardContent } from "~/components/ui/card";
 import screen1 from '../images/1.png';
 import screen2 from '../images/2.png';
 import screen3 from '../images/3.png';
+import Image from "next/image";
 import {
   Carousel,
   CarouselContent,
@@ -17,13 +18,13 @@ export default function ImageCarousel() {
     <Carousel className="w-full max-w-4xl content-center justify-center place-items-center">
       <CarouselContent>
           <CarouselItem>
-            <img src={screen1.src} alt="logo" />
+            <Image src={screen1} alt="screenshot of game 1"></Image>
           </CarouselItem>
           <CarouselItem>
-            <img src={screen2.src} alt="logo" />
+            <Image src={screen2} alt="screenshot of game 2"></Image>
           </CarouselItem>
           <CarouselItem>
-            <img src={screen3.src} alt="logo" />
+            <Image src={screen3} alt="screenshot of game 3"></Image>
           </CarouselItem>
       </CarouselContent>
       <CarouselPrevious />
