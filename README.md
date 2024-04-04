@@ -4,6 +4,8 @@
 - Kristián Stefurak
 - Nikolas Erlebach
 
+Live: https://lunatic.kordy.xyz
+
 ## How to Install and Run:
 
 To get started with Lunatic landing page, follow these steps:
